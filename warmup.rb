@@ -87,11 +87,12 @@ end
 def double_nums
  # multiply every integer by 4
  array_of_integers = [1, 2, 3, 4, 5]
- binding.pry
+ array_of_integers.map {|integer| integer * 4}
 end
 
 def print_number_greater_than_10
   # using your new array from double_nums, only return numbers that are greater than 10
+  double_nums.select {|integer| integer > 10}
 end
 
 binding.pry
